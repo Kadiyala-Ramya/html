@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./successful.html" autocomplete="off">
+        <label for="date">Enter a date(DD-MM-YYYY):</label>
+        <input type="date" name="date" id="date" pattern="\d{2}-\d{2}-\d{4}" required><br><br>
+        <label for="mail">Username:</label>
+        <input type="email" name="mail" id="mail" pattern="[A-Za-z0-9]+@gmail.com" title="Enter your correct username" required><br>
+        <label for="psw">Password:</label>
+        <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
