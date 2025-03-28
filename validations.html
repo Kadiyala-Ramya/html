@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./successful.html" autocomplete="off">
+        <label>Date:</label>
+        <input type="text" pattern="(?:19|20)(?:[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:29|30))|(?:(?:0[13578]|1[02])-31))|(?:[13579][26]|[02468][048])-02-29)" required><br>
+        <label for="mail">Username:</label>
+        <input type="email" name="mail" id="mail" pattern="[A-Za-z0-9]+@gmail.com" title="Enter your correct username" required><br>
+        <label for="psw">Password:</label>
+        <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
